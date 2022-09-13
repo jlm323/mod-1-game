@@ -13,11 +13,34 @@
     <div class="container">
         <div class="game">
             <!-- primary game area -->
-            <div class="player"></div>
-            <div class="computer"></div>
+            <div class="options">
+                <!-- player options, pick r,p,s -->
+                
+                <img src="/images/skel-rock.png" id="rockPic" class="choicePic">
+                
+                <img src="/images/skel-paper.png" id="paperPic" class="choicePic">
+
+                <img src="/images/skel-scissors.png" id="scissorsPic" class="choicePic">
+
+                <button id="rock" class="choice">Rock</button>
+                <button id="paper" class="choice">Paper</button>
+                <button id="scissors" class="choice">Scissors</button>
+
+            </div>
+
+            <div class="player" id="player-choice">
+                <!-- player choice -->
+            </div>
+
+            <div id="result"></div>
+
+            <div class="computer" id="computer-choice">
+                <!-- computer choice -->
+            </div>
         </div>
         <div class="reset">
             <!-- will house reset button -->
+            <button type="button" name="reset">Reset</button>
         </div>
     </div>
     
