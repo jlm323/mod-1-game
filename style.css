@@ -60,12 +60,14 @@ h1 {
     width: 300px;
     height: 280px;
     border: 1px solid red;
+    text-align: center;
 }
 
 #result {
     width: 200px;
     height: 280px;
     border: 1px solid yellow;
+    text-align: center;
 }
 
 .reset {
@@ -80,6 +82,10 @@ h1 {
 
 .choice {
     height: 20px;
-    
-   
+    background-color: black;
+    color: white;
+}
+
+.choice:hover {
+    box-shadow: red;
 }
