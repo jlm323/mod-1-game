@@ -10,6 +10,10 @@
 </head>
 <body>
     <h1>ROCK, PAPER, SCISSORS</h1>
+    <p id="instructions">
+        Win more rounds than the computer to win the game.<br>
+        Choose between Rock, Paper, or Scissors to begin.<br>
+    </p>
     <div class="container">
         <div class="game">
             <!-- primary game area -->
@@ -22,29 +26,32 @@
 
                 <img src="/images/skel-scissors.png" id="scissorsPic" class="choicePic">
 
-                <button id="rock" class="choice">Rock</button>
-                <button id="paper" class="choice">Paper</button>
-                <button id="scissors" class="choice">Scissors</button>
+                <button id="Rock" class="choice">Rock</button>
+                <button id="Paper" class="choice">Paper</button>
+                <button id="Scissors" class="choice">Scissors</button>
 
             </div>
+            <div class="game-area">
+                <div class="player" id="player-choice">
+                    <!-- player choice -->
+                </div>
 
-            <div class="player" id="player-choice">
-                <!-- player choice -->
-            </div>
+                <div id="result">
+                    
+                </div>
 
-            <div id="result">
-                <p id="roundResult"></p>
-            </div>
+                <div class="computer" id="computer-choice">
+                    <!-- computer choice -->
+                </div>
 
-            <div class="computer" id="computer-choice">
-                <!-- computer choice -->
+                <div class="reset-area">
+                    <!-- reset button -->
+                    <button type="button" class="reset">Reset</button>
+                </div>
             </div>
-        </div>
-        <div class="reset">
-            <!-- will house reset button -->
-            <button type="button" name="reset">Reset</button>
-        </div>
+            <div id="footer">
+                <p class="info">Game by Jessica Milewski, check out my <a href="https://github.com/jlm323/mod-1-game" target="_blank" class="credit">GitHub</a> | Font by <a href="http://www.sinisterfonts.com/" target="_blank" class="credit">Sinister Fonts</a> | Skeleton images by Vectors Market from <a href="https://thenounproject.com/browse/icons/term/skeleton-hand/" target="_blank" title="skeleton hand Icons" class="credit">Noun Project</a></p>
+            </div>
     </div>
-    
 </body>
 </html>

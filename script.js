@@ -29,7 +29,6 @@ const playerArea = document.getElementById('player-choice');
 const computerArea = document.getElementById('computer-choice');
 const options = document.querySelectorAll('.choice');
 const resultArea = document.getElementById('result');
-const roundResult = document.querySelector('#roundResult')
 const resetBtn = document.querySelector('.reset');
 
 let playerPick;
@@ -43,6 +42,14 @@ let computerScore = 0;
 // creates score keeping element
 const roundNum = document.createElement('p');
 roundNum.setAttribute('id', 'score');
+
+// results
+const roundResult = document.createElement('p');
+roundResult.setAttribute('id', 'roundResult');
+
+// result of round
+const winLoseDraw = document.createElement('p');
+winLoseDraw.setAttribute('id', 'win-lose');
 
 // creates play again button when game ends
 const playAgain = document.createElement('button');
@@ -61,21 +68,21 @@ options.forEach(options => options.addEventListener('click', (e) => {
 }))
 
 function newGame() {
-    if (playerPick == 'rock') {
+    if (playerPick == 'Rock') {
         let rockPic = document.createElement('img');
         rockPic.setAttribute('src', '/images/skel-rock.png');
         rockPic.className = 'choicePic';
         playerArea.appendChild(rockPic);
     }
 
-    if (playerPick == 'paper') {
+    if (playerPick == 'Paper') {
         let paperPic = document.createElement('img');
         paperPic.setAttribute('src', '/images/skel-paper.png');
         paperPic.className = 'choicePic';
         playerArea.appendChild(paperPic);
     }
 
-    if (playerPick == 'scissors') {
+    if (playerPick == 'Scissors') {
         let scissorsPic = document.createElement('img');
         scissorsPic.setAttribute('src', '/images/skel-scissors.png');
         scissorsPic.className = 'choicePic';
@@ -104,12 +111,13 @@ function newGame() {
             if (round === rounds) {
                 // player wins game
                 if (playerScore > computerScore) {
-                    roundResult.innerHTML = "YOU WON THE GAME!";
-                    // play again button
+                    resultArea.appendChild(roundResult);
+                    roundResult.innerHTML = `YOU WON THE GAME!<br>`;
                     roundResult.appendChild(playAgain);
                 } // player loses game
                 if (computerScore > playerScore) {
-                    roundResult.innerHTML = "YOU LOST THE GAME!"
+                    resultArea.appendChild(roundResult);
+                    roundResult.innerHTML = `YOU LOST THE GAME!<br>`;
                     // play again button
                     roundResult.appendChild(playAgain);
                 }
@@ -123,15 +131,15 @@ function randomComputer() {
     const randomChoice = Math.floor(Math.random() * options.length) + 1;
 
     if (randomChoice === 1) {
-        computerPick = 'rock';
+        computerPick = 'Rock';
     }
 
     if (randomChoice === 2) {
-        computerPick = 'paper';        
+        computerPick = 'Paper';        
     }
 
     if (randomChoice === 3) {
-        computerPick = 'scissors';        
+        computerPick = 'Scissors';        
     }
     console.log('computer choice: ' + computerPick)
     setTimeout(() => {
@@ -141,21 +149,21 @@ function randomComputer() {
 
     // once computer picks, related image appears in computer area
     setTimeout(() => {
-        if (computerPick == 'rock') {
+        if (computerPick == 'Rock') {
             let rockPic = document.createElement('img');
             rockPic.setAttribute('src', '/images/skel-rock.png');
             rockPic.className = 'choicePic';
             computerArea.appendChild(rockPic);
         }
     
-        if (computerPick == 'paper') {
+        if (computerPick == 'Paper') {
             let paperPic = document.createElement('img');
             paperPic.setAttribute('src', '/images/skel-paper.png');
             paperPic.className = 'choicePic';
             computerArea.appendChild(paperPic);
         }
     
-        if (computerPick == 'scissors') {
+        if (computerPick == 'Scissors') {
             let scissorsPic = document.createElement('img');
             scissorsPic.setAttribute('src', '/images/skel-scissors.png');
             scissorsPic.className = 'choicePic';
@@ -167,27 +175,27 @@ function randomComputer() {
 
 // results for if player wins, if computer wins, or draw
 function gameRound(){
-    if (playerPick === 'scissors' && computerPick === 'paper') {
+    if (playerPick === 'Scissors' && computerPick === 'Paper') {
         result = 'You win!';
     }
 
-    if (playerPick === 'rock' && computerPick === 'scissors') {
+    if (playerPick === 'Rock' && computerPick === 'Scissors') {
         result = 'You win!';
     }
 
-    if (playerPick === 'paper' && computerPick === 'rock') {
+    if (playerPick === 'Paper' && computerPick === 'Rock') {
         result = 'You win!';
     }
 
-    if (playerPick === 'scissors' && computerPick === 'rock') {
+    if (playerPick === 'Scissors' && computerPick === 'Rock') {
         result = 'You lose!';
     }
 
-    if (playerPick === 'rock' && computerPick === 'paper') {
+    if (playerPick === 'Rock' && computerPick === 'Paper') {
         result = 'You lose!';
     }
 
-    if (playerPick === 'paper' && computerPick === 'scissors') {
+    if (playerPick === 'Paper' && computerPick === 'Scissors') {
         result = 'You lose!';
     }
 
@@ -195,7 +203,8 @@ function gameRound(){
         result = "It's a draw!";
     }
     setTimeout(() => {
-        roundResult.innerHTML = result;
+        resultArea.appendChild(winLoseDraw);
+        winLoseDraw.innerHTML = ` ${result}<br>`;
     }, 2000);
         
 }
