@@ -10,7 +10,7 @@ This project is based on the classic game, Rock, Paper, and Scissors. The user c
 HTML, CSS, JavaScript
 
 ## Author and Acknowledgements
-Author: [Jessica Milewski]()
+Author: [Jessica Milewski](https://github.com/jlm323 "GitHub")
 
 Needleteeth Spooky and Creepy font created by [sinisterfonts.com](http://www.sinisterfonts.com/ "Sinister Fonts")
 
