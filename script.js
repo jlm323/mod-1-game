@@ -72,21 +72,21 @@ options.forEach(options => options.addEventListener('click', (e) => {
 function newGame() {
     if (playerPick == 'Rock') {
         let rockPic = document.createElement('img');
-        rockPic.setAttribute('src', './images/skel-rock.png');
+        rockPic.setAttribute('src', 'mod-1-game/images/skel-rock.png');
         rockPic.className = 'choicePic';
         playerArea.appendChild(rockPic);
     }
 
     if (playerPick == 'Paper') {
         let paperPic = document.createElement('img');
-        paperPic.setAttribute('src', './images/skel-paper.png');
+        paperPic.setAttribute('src', 'mod-1-game/images/skel-paper.png');
         paperPic.className = 'choicePic';
         playerArea.appendChild(paperPic);
     }
 
     if (playerPick == 'Scissors') {
         let scissorsPic = document.createElement('img');
-        scissorsPic.setAttribute('src', './images/skel-scissors.png');
+        scissorsPic.setAttribute('src', 'mod-1-game/images/skel-scissors.png');
         scissorsPic.className = 'choicePic';
         playerArea.appendChild(scissorsPic);
     }
@@ -158,21 +158,21 @@ function randomComputer() {
     setTimeout(() => {
         if (computerPick == 'Rock') {
             let rockPic = document.createElement('img');
-            rockPic.setAttribute('src', './images/skel-rock.png');
+            rockPic.setAttribute('src', 'mod-1-game/images/skel-rock.png');
             rockPic.className = 'choicePicCPU';
             computerArea.appendChild(rockPic);
         }
     
         if (computerPick == 'Paper') {
             let paperPic = document.createElement('img');
-            paperPic.setAttribute('src', './images/skel-paper.png');
+            paperPic.setAttribute('src', 'mod-1-game/images/skel-paper.png');
             paperPic.className = 'choicePicCPU';
             computerArea.appendChild(paperPic);
         }
     
         if (computerPick == 'Scissors') {
             let scissorsPic = document.createElement('img');
-            scissorsPic.setAttribute('src', './images/skel-scissors.png');
+            scissorsPic.setAttribute('src', 'mod-1-game/images/skel-scissors.png');
             scissorsPic.className = 'choicePicCPU';
             computerArea.appendChild(scissorsPic);
         }
