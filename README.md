@@ -9,9 +9,13 @@ This project is based on the classic game, Rock, Paper, and Scissors. The user c
 ## Built With
 HTML, CSS, JavaScript
 
-## Author and Acknowledgements
+## Installation
+Fork this repository, then clone the fork of the repo.
+
+## Author
 Author: [Jessica Milewski](https://github.com/jlm323 "GitHub")
 
+## Acknowledgements
 Needleteeth Spooky and Creepy font created by [sinisterfonts.com](http://www.sinisterfonts.com/ "Sinister Fonts")
 
 Skeleton hand images by Vectors Market on the [Noun Project](https://thenounproject.com/browse/icons/term/skeleton-hand/ "The Noun Project")
@@ -20,7 +24,10 @@ Dancing skeletons image by storyset on [Freepik](https://www.freepik.com/free-ve
 
 Tombstone image by Clker-Free-Vector-Images on [Pixabay](https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=312540 "Tombstone Image")
 
-Additional images found on Pixabay.
+Additional images found on Pixabay
 
 
 This project was built for the first module in the Software Engineering course at Per Scholas.
+
+## Link
+Play spooky [Rock, Paper, Scissors](https://jlm323.github.io/mod-1-game/ "Game Link")!
