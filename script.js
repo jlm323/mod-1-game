@@ -71,10 +71,10 @@ options.forEach(options => options.addEventListener('click', (e) => {
 
 function newGame() {
     if (playerPick == 'Rock') {
-        let rockPic = document.createElement('img');
-        rockPic.setAttribute('src', 'images/skel-rock.png');
-        rockPic.className = 'choicePic';
-        playerArea.appendChild(rockPic);
+        let rockPicP = document.createElement('img');
+        rockPicP.setAttribute('src', 'images/skel-rock.png');
+        rockPicP.className = 'choicePic';
+        playerArea.appendChild(rockPicP);
     }
 
     if (playerPick == 'Paper') {
