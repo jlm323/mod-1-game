@@ -72,21 +72,21 @@ options.forEach(options => options.addEventListener('click', (e) => {
 function newGame() {
     if (playerPick == 'Rock') {
         let rockPic = document.createElement('img');
-        rockPic.setAttribute('src', '/images/skel-rock.png');
+        rockPic.setAttribute('src', 'images/skel-rock.png');
         rockPic.className = 'choicePic';
         playerArea.appendChild(rockPic);
     }
 
     if (playerPick == 'Paper') {
         let paperPic = document.createElement('img');
-        paperPic.setAttribute('src', '/images/skel-paper.png');
+        paperPic.setAttribute('src', 'images/skel-paper.png');
         paperPic.className = 'choicePic';
         playerArea.appendChild(paperPic);
     }
 
     if (playerPick == 'Scissors') {
         let scissorsPic = document.createElement('img');
-        scissorsPic.setAttribute('src', '/images/skel-scissors.png');
+        scissorsPic.setAttribute('src', 'images/skel-scissors.png');
         scissorsPic.className = 'choicePic';
         playerArea.appendChild(scissorsPic);
     }
