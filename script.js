@@ -30,6 +30,8 @@ const computerArea = document.getElementById('computer-choice');
 const options = document.querySelectorAll('.choice');
 const resultArea = document.getElementById('result');
 const resetBtn = document.querySelector('.reset');
+const winAnim = document.getElementById('win-animation');
+const loseAnim = document.getElementById('lose-animation');
 
 let playerPick;
 let computerPick;
@@ -103,6 +105,9 @@ function newGame() {
                 computerScore += 1;
             } 
             round++; 
+            if (result == "It's a draw!") {
+                round--;
+            }
             
             // updates rounds won aka player score and current round
             resultArea.appendChild(roundNum);
@@ -112,11 +117,13 @@ function newGame() {
                 // player wins game
                 if (playerScore > computerScore) {
                     resultArea.appendChild(roundResult);
+                    winAnim.style.display = 'inline';
                     roundResult.innerHTML = `YOU WON THE GAME!<br>`;
                     roundResult.appendChild(playAgain);
                 } // player loses game
                 if (computerScore > playerScore) {
                     resultArea.appendChild(roundResult);
+                    loseAnim.style.display = 'inline';
                     roundResult.innerHTML = `YOU LOST THE GAME!<br>`;
                     // play again button
                     roundResult.appendChild(playAgain);
@@ -152,21 +159,21 @@ function randomComputer() {
         if (computerPick == 'Rock') {
             let rockPic = document.createElement('img');
             rockPic.setAttribute('src', '/images/skel-rock.png');
-            rockPic.className = 'choicePic';
+            rockPic.className = 'choicePicCPU';
             computerArea.appendChild(rockPic);
         }
     
         if (computerPick == 'Paper') {
             let paperPic = document.createElement('img');
             paperPic.setAttribute('src', '/images/skel-paper.png');
-            paperPic.className = 'choicePic';
+            paperPic.className = 'choicePicCPU';
             computerArea.appendChild(paperPic);
         }
     
         if (computerPick == 'Scissors') {
             let scissorsPic = document.createElement('img');
             scissorsPic.setAttribute('src', '/images/skel-scissors.png');
-            scissorsPic.className = 'choicePic';
+            scissorsPic.className = 'choicePicCPU';
             computerArea.appendChild(scissorsPic);
         }
     }, 1000);
