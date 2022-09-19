@@ -19,11 +19,11 @@ Fork this repository, then clone the fork of the repo.
 
 ## Gameplay
 <div style="width: 300px">
-![Options to choose from](/mod-1-game/images/rps-game-ex.jpg "Options to choose from")
+![Options to choose from](https://github.com/jlm323/mod-1-game/blob/main/images/rps-game-ex.jpg "Options to choose from")
 </div>
 
 <div style="width: 500px">
-![Game area](/mod-1-game/images/rps-game-ex2.jpg "Game area")
+![Game area](https://github.com/jlm323/mod-1-game/blob/main/images/rps-game-ex2.jpg "Game area")
 </div>
 
 ## Author
