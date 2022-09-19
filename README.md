@@ -18,13 +18,9 @@ HTML, CSS, JavaScript
 Fork this repository, then clone the fork of the repo.
 
 ## Gameplay
-<div style="width: 300px">
-![Options to choose from](https://github.com/jlm323/mod-1-game/blob/main/images/rps-game-ex.jpg "Options to choose from")
-</div>
+<img src="https://github.com/jlm323/mod-1-game/blob/main/images/rps-game-ex.jpg" alt="Options to choose from" title="Options to choose from" style="width: 300px">
 
-<div style="width: 500px">
-![Game area](https://github.com/jlm323/mod-1-game/blob/main/images/rps-game-ex2.jpg "Game area")
-</div>
+<img src="https://github.com/jlm323/mod-1-game/blob/main/images/rps-game-ex2.jpg" alt="Game area" title="Game area" style="width: 450px">
 
 ## Author
 Author: [Jessica Milewski](https://github.com/jlm323 "GitHub")
