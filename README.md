@@ -9,8 +9,22 @@ This project is based on the classic game, Rock, Paper, and Scissors. The user c
 ## Built With
 HTML, CSS, JavaScript
 
+## Future Implementation
+- Make the game responsive for easier play on other devices
+- Add Player vs Player instead of just Player vs Computer
+- Add more animations and sound effects to add to user experience
+
 ## Installation
 Fork this repository, then clone the fork of the repo.
+
+## Gameplay
+<div style="width: 300px">
+![Options to choose from](/mod-1-game/images/rps-game-ex.jpg "Options to choose from")
+</div>
+
+<div style="width: 500px">
+![Game area](/mod-1-game/images/rps-game-ex2.jpg "Game area")
+</div>
 
 ## Author
 Author: [Jessica Milewski](https://github.com/jlm323 "GitHub")
